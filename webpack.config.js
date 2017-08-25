@@ -1,14 +1,16 @@
 module.exports = {
-  entry: "./index.js",
+  entry: "./entry.jsx",
   output: {
     path: __dirname,
-    filename: "bundle.js",
-    publicPath: "/static/"
+    filename: "./bundle.js",
+    // publicPath: "/static/"
   },
 
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: [
+        /\.jsx?$/, /\.js?$/
+      ],
       exclude: /node_modules/,
       loader: "babel-loader",
       include: __dirname,

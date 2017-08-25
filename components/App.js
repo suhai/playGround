@@ -1,6 +1,4 @@
-
 import React from 'react';
-import "./Algorithms";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -33,7 +31,9 @@ export default class App extends React.Component {
         <div>MY BOILER PLATE</div>
         <hr/>
         <br/>
-        <div>{counter}</div>
+        <div>
+          {counter}
+        </div>
         <br/>
         <hr/>
         <br/>
