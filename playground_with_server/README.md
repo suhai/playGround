@@ -1,5 +1,5 @@
 # playGround
-
+# $ npm start  ##### to run the app.
 
 
 Install and Configure Webpack
