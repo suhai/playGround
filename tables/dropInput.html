@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="dropStyles.css">
+	</head>
+	<body>
+
+		<p> using oninput </p>
+
+		<select id="calcType1" oninput="checkShow('enter1',this)">
+			<option value="val">Entered Value</option>
+			<option value="saveVal">Saved Value</option>
+			<option value="saveVal2">Saved Value 2</option>
+			<option value="saveVal3">Saved Value 3</option>
+		</select>
+
+		<div class="noBreak shown" id="enter1">
+			<input id="calcValue1" class="number"> ±
+			<input id="calcUnc1" class="number">
+		</div>
+		
+		<p> using onchange </p>
+		<select id="calcType2" onchange="checkShow('enter2',this)">
+			<option value="val">Entered Value</option>
+			<option value="saveVal">Saved Value</option>
+			<option value="saveVal2">Saved Value 2</option>
+			<option value="saveVal3">Saved Value 3</option>
+		</select>
+
+		<div class="noBreak shown" id="enter2">
+			<input id="calcValue2" class="number"> ±
+			<input id="calcUnc2" class="number">
+		</div>
+		
+		<p>
+			not using anything (how i want the dropdown menu to behave, except i want the javascript to be running)
+		</p>
+
+		<select id="calcType3">
+			<option value="val">Entered Value</option>
+			<option value="saveVal">Saved Value</option>
+			<option value="saveVal2">Saved Value 2</option>
+			<option value="saveVal3">Saved Value 3</option>
+		</select>
+
+		<div class="noBreak shown" id="enter3">
+			<input id="calcValue3" class="number"> ±
+			<input id="calcUnc3" class="number">
+		</div>	
+	</body>
+	<script src="dropScripts.js"></script>
+</html>

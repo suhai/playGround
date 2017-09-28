@@ -1,0 +1,16 @@
+
+.shown {
+  visibility: show;
+}
+
+.hidden {
+	visibility : hidden;
+	margin: 0,0,0,0;
+	position: absolute;
+	top: -100%;
+	left: -100%;
+}
+
+.noBreak {
+  display: inline;
+}
