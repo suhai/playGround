@@ -1,4 +1,6 @@
 import React from 'react';
+import myAlgorithms from './Algorithms';
+import './JQuery';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -24,7 +26,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    const { counter } = this.state;
+		const { counter } = this.state;
 
     return (
       <section>
@@ -32,7 +34,7 @@ export default class App extends React.Component {
         <hr/>
         <br/>
         <div>
-          {counter}
+					{counter}
         </div>
         <br/>
         <hr/>

@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app';
-import './components/algorithms';
-import './components/jquery';
+import App from './components/App';
 
 document.addEventListener('DOMContentLoaded', () => {
 
